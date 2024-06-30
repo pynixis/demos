@@ -1,5 +1,5 @@
 yfinance
-sys
+# sys
 streamlit
 pandas
 requests
