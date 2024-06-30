@@ -135,7 +135,7 @@ rpm==4.19.1.1
 rsa==4.9
 s3transfer==0.10.1
 SciPy==1.11.1
-selinux @ file:///builddir/build/BUILD/libselinux-3.5/src
+# selinux @ file:///builddir/build/BUILD/libselinux-3.5/src
 Send2Trash==1.8.2
 sepolicy @ file:///builddir/build/BUILD/selinux-3.5/python/sepolicy
 setools==4.4.3
