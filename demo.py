@@ -41,7 +41,7 @@ with tab3:
 
     map_data = pd.read_json("sample_airport_dater.json")
 
-    st.map(map_data, color= '#FFA500', size=500, zoom=7)
+    st.map(map_data, color= '#FFA500', zoom=7)
 
 with tab4:
     st.title("Currency/Crypto Live Data")
