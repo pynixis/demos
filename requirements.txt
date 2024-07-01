@@ -4,5 +4,6 @@ streamlit
 pandas
 requests
 yahoo_fin
-Nominatim
-geodesic
+geopy
+# Nominatim
+# geodesic
