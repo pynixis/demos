@@ -11,7 +11,7 @@ from geopy.geocoders import Nominatim
 geolocator = Nominatim(user_agent="PPPMF")
 from geopy.distance import geodesic
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="App Store", page_icon=":airplane_departure:",layout="wide")
 
 tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs(["Weather", "TN State Parks", "TN Airports", "Crypto Dashboard", "Currency Dashboard", "Commodities Dashboard", "FDX Stock Data", "Pilot Pay App"])
 
