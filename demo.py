@@ -62,12 +62,23 @@ with tab4:
     st.table(crypto)
 
 with tab5:
-    st.title("USD to MXN")
+    st.title("USD to Foreign Currency")
 
-# getting the currency rate for turkish lira
-    currency = pd.read_html(f'https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=MXN')
+    col1, col2 = st.columns(2)
 
-# prints all the tables
+    col1.write("JPY = Japanese Yen")
+    col1.write("MYR = Malaysian Ringgit")
+    col1.write("MXN = Mexican Peso")
+    col2.write("RUB = Russian Ruble")
+    col2.write("ZAR = South African Rand")
+    col2.write("TRY = Turkisk Lira")
+
+    currency = st.selectbox("Exchange Rate", ["JPY", "MYR", "MXN", "RUB", "ZAR", "TRY"])
+
+    # getting the currency rate from usd to foreign currency
+    currency = pd.read_html(f'https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To={currency}')
+
+    # prints all the tables
     st.table(currency[0])
 
 with tab6:
